@@ -1,0 +1,10 @@
+node_modules/
+.research/
+research/
+analysis/
+release/
+.env
+.env.*
+!.env.example
+*.log
+

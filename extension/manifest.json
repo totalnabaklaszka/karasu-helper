@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Karasu Helper",
+  "version": "1.2.2",
+  "description": "Auto accept and veto priorities for Karasu. FACEIT ranks, connect copy, and Loadout Studio with colours, value filters and saved sets.",
+  "minimum_chrome_version": "111",
+  "permissions": ["storage", "offscreen", "clipboardWrite"],
+  "optional_host_permissions": ["https://api.skinport.com/*"],
+  "action": {
+    "default_title": "Karasu Helper",
+    "default_popup": "popup.html",
+    "default_icon": {"16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png"}
+  },
+  "icons": {"16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png"},
+  "background": {"service_worker": "background.js"},
+  "options_ui": {"page": "options.html", "open_in_tab": true},
+  "content_scripts": [
+    {
+      "matches": ["https://karasu.live/*"],
+      "js": ["common.js", "skins.js", "page-adapter.js", "skins-adapter.js", "faceit.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://karasu.live/*"],
+      "js": ["common.js", "content.js"],
+      "css": ["faceit.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'"}
+}
+

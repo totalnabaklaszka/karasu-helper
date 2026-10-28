@@ -1,0 +1,95 @@
+KARASU HELPER 1.2.2 — Brave / Chrome / Edge
+
+UPDATE
+1. Keep the extension in the same folder you originally loaded.
+2. Open brave://extensions, chrome://extensions or edge://extensions.
+3. Click Reload on Karasu Helper.
+4. Refresh all open Karasu tabs to remove the old toolbar/button.
+5. Click the extension icon. All settings are now in this popup.
+If the popup asks you to reload the extension, refreshing Karasu alone is
+not enough: use Reload on the browser's extensions page first.
+
+NEW INSTALLATION
+1. Extract the ZIP into a permanent folder.
+2. Open your browser's extensions page and enable Developer mode.
+3. Click Load unpacked and select the folder containing manifest.json.
+4. Refresh Karasu and click the extension icon.
+
+APPEARANCE
+Use the sun / moon buttons in the header for Light mode / Dark mode.
+Your theme is saved separately from your automation settings.
+Space Grotesk is bundled locally. Routine waiting text is hidden.
+The palette uses a red accent with neutral dark / light backgrounds.
+made by : totalnabaklaszka
+
+BACKGROUND ASSIST
+The popup can be closed while you play or Alt+Tab into a deathmatch.
+Keep the Karasu Queue/match tab and browser open and the computer awake.
+Server-rendered changes wake the adapter; active short countdowns also use
+the extension worker. Enabled automation protects Queue/match tabs from
+automatic memory discard and restores the recorded preference when disabled.
+Freezing/suspension, connection loss or sleep can still interrupt the site.
+
+AUTO-COPY CONNECT
+Enable Queue > Auto-copy connect (off by default).
+When your match server is ready, copy connect IP:port automatically.
+The command is copied again if the server address changes.
+Unchanged addresses are not copied repeatedly across open tabs.
+The browser may request permission to write to the clipboard on update.
+The extension does not read the old clipboard contents or open the game.
+
+FACEIT RANKS
+Enabled by default. Switch Queue > FACEIT ranks off to hide the badges.
+Choose Queue > Rank style: Badge, Label or Minimal. The style is saved.
+Badge uses circular level icons with colored progress arcs for levels 1-10.
+An orange F, FACEIT level and ELO appear next to Karasu ELO in match tables.
+Data comes from the Karasu player profile fields already loaded by the site.
+Missing data shows a dash. Match-start snapshots are labelled in the tooltip.
+No FACEIT API key or extra network requests are needed.
+
+QUEUE / MAPS / SERVERS
+Automatic features are off on first installation. Saved preferences are
+preserved on update. Vertigo and unsupported servers are removed.
+Add priorities with +, reorder with arrows and remove with x.
+The first listed available option is banned first. After your priorities,
+the fixed catalog order is used. Bans require your captain turn.
+Map picks and CT/T side choices remain manual.
+
+SKINS
+Keep a Karasu tab open. Open Skins in the extension.
+Catalog is selected by default, including skins you do not own.
+Search by name or colour and use Random weapon or Random loadout.
+Doppler / Gamma Doppler names show Phase 1-4, Ruby, Sapphire,
+Black Pearl or Emerald. Search Phase 1 or P1 to select a phase.
+Preview a skin, then use Craft for T, Craft for CT or Craft for Both.
+Each button crafts AND equips. Incompatible team buttons are disabled.
+This creates and equips the skin directly in the panel, without a new tab.
+Default wear/pattern, no stickers or custom name. Both uses compatible teams.
+In a catalog Random loadout, click Equip next to each skin you want to add.
+Interrupted or unconfirmed changes are not automatically repeated.
+If a skin was created but equipping failed, it remains in your Karasu inventory.
+The Skins shortcut points to https://karasu.live/apps/inventory.
+The extension browses the full catalog; the My inventory tab has been removed.
+Random loadout keeps your weapons and skips slots without matching skins.
+If your loadout is unavailable, catalog randomisation uses default CT/T slots.
+Colour tags are approximate. Refresh the site's Skins page after applying.
+
+LOADOUT STUDIO
+Open Loadout filters: colour, minimum USD market value and minimum rarity.
+The value is the cheapest normal Skinport listing across wear conditions,
+for the exact finish / Doppler variant. It is indicative; Karasu crafting is free.
+Unknown prices are skipped when a value minimum is active.
+No matching skin for a slot = leave that slot unchanged.
+Use Redline / Ice / Toxic / Clean colour shortcuts, Favorites and value sorting.
+Random loadout: lock slots with the circle; reroll one slot or all unlocked slots.
+Name and Save up to 12 sets on this device. Loading a set only opens a preview.
+Craft & equip loadout applies rows sequentially. Stop after this skin safely
+halts the batch after its current request. A failure stops subsequent skins.
+For a longer batch, open the full Settings page with the header expand button
+and keep it open; closing the popup can interrupt its batch controller.
+The selected skin/actions now stay in a dock below the scrolling result list.
+Update prices requests optional access only to api.skinport.com, without
+cookies or API keys. Existing bundled prices work without this permission.
+Studio features are unlocked for testing; no subscription or payment is needed.
+
+The browser and Karasu must stay open for match automation to work.

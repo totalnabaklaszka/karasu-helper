@@ -1,0 +1,54 @@
+.ka-faceit-badge {
+  --faceit-tone: #f4ed35;
+  --faceit-progress: 150deg;
+  display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0;
+  margin-inline-start: 7px; padding-inline-start: 7px; border-inline-start: 1px solid #ffffff1f;
+  vertical-align: middle; white-space: nowrap; color: #e2e6ed;
+  font: 600 10.5px/1 "Segoe UI Variable Text", "Segoe UI", Arial, sans-serif;
+  letter-spacing: .01em; text-decoration: none; cursor: default; -webkit-font-smoothing: antialiased;
+}
+.ka-faceit-badge[href] { cursor: pointer; }
+.ka-faceit-badge[href]:hover { color: #fff; text-decoration: none; }
+.ka-faceit-badge:focus-visible { outline: 1px solid #ff9c63; outline-offset: 4px; border-radius: 2px; }
+.ka-faceit-mark { color: #ff873d; font-size: 10px; font-weight: 800; letter-spacing: -.4px; }
+.ka-faceit-level {
+  display: inline-grid; place-items: center; position: relative; flex-shrink: 0; width: 20px; height: 20px;
+  border-radius: 50%; background: #161a21; color: var(--faceit-tone); font-size: 9.5px; font-weight: 800;
+  font-variant-numeric: tabular-nums; letter-spacing: -.3px;
+}
+.ka-faceit-badge[data-style="badge"] .ka-faceit-level::before {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  background: conic-gradient(from 210deg, var(--faceit-tone) var(--faceit-progress), #ffffff14 0deg 300deg, transparent 300deg);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 1.8px), #000 calc(100% - 1.3px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 1.8px), #000 calc(100% - 1.3px));
+}
+.ka-faceit-elo { font-weight: 650; font-variant-numeric: tabular-nums; }
+.ka-faceit-elo::after { content: "ELO"; margin-inline-start: 3px; color: #919aa8; font-size: 7px; font-weight: 600; letter-spacing: .07em; }
+.ka-faceit-badge[data-level="1"] { --faceit-tone: #e6e8eb; --faceit-progress: 30deg; }
+.ka-faceit-badge[data-level="2"] { --faceit-tone: #67e545; --faceit-progress: 60deg; }
+.ka-faceit-badge[data-level="3"] { --faceit-tone: #67e545; --faceit-progress: 90deg; }
+.ka-faceit-badge[data-level="4"] { --faceit-progress: 120deg; }
+.ka-faceit-badge[data-level="5"] { --faceit-progress: 150deg; }
+.ka-faceit-badge[data-level="6"] { --faceit-progress: 180deg; }
+.ka-faceit-badge[data-level="7"] { --faceit-progress: 210deg; }
+.ka-faceit-badge[data-level="8"] { --faceit-tone: #ff8b32; --faceit-progress: 240deg; }
+.ka-faceit-badge[data-level="9"] { --faceit-tone: #ff8b32; --faceit-progress: 270deg; }
+.ka-faceit-badge[data-level="10"] { --faceit-tone: #ff4245; --faceit-progress: 300deg; }
+
+.ka-faceit-badge[data-style="label"] .ka-faceit-level {
+  display: inline-flex; gap: 3px; width: auto; height: auto; clip-path: none; background: none;
+  color: #ff9a57; font-size: 10.5px; font-weight: 750; letter-spacing: 0;
+}
+.ka-faceit-badge[data-style="label"] .ka-faceit-level::before { content: "LVL"; color: #b9a18e; font-size: 7px; font-weight: 600; letter-spacing: .05em; }
+.ka-faceit-badge[data-style="minimal"] { gap: 5px; padding-inline-start: 0; border: 0; }
+.ka-faceit-badge[data-style="minimal"] .ka-faceit-mark { display: none; }
+.ka-faceit-badge[data-style="minimal"] .ka-faceit-level {
+  display: inline-flex; gap: 5px; width: auto; height: auto; clip-path: none; background: none;
+  color: #c5ccd7; font-size: 10.5px; font-weight: 700; letter-spacing: 0;
+}
+.ka-faceit-badge[data-style="minimal"] .ka-faceit-level::after { content: "·"; color: #828c9b; }
+.ka-faceit-level[hidden] { display: none !important; }
+@media (max-width: 640px) {
+  .ka-faceit-badge { gap: 4px; margin-inline-start: 5px; padding-inline-start: 5px; }
+  .ka-faceit-elo::after { display: none; }
+}
