@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Karasu Helper",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Auto accept and veto priorities for Karasu. FACEIT ranks, connect copy, and Loadout Studio with colours, value filters and saved sets.",
   "minimum_chrome_version": "111",
   "permissions": ["storage", "offscreen", "clipboardWrite"],

@@ -1,4 +1,4 @@
-KARASU HELPER 1.2.2 — Brave / Chrome / Edge
+KARASU HELPER 1.2.3 — Brave / Chrome / Edge
 
 UPDATE
 1. Keep the extension in the same folder you originally loaded.
@@ -21,6 +21,10 @@ Your theme is saved separately from your automation settings.
 Space Grotesk is bundled locally. Routine waiting text is hidden.
 The palette uses a red accent with neutral dark / light backgrounds.
 made by : totalnabaklaszka
+
+SUPPORT
+The optional Buy me a coffee link opens https://ko-fi.com/totalnabaklaszka.
+All features remain free. Donations are handled on Ko-fi, outside the extension.
 
 BACKGROUND ASSIST
 The popup can be closed while you play or Alt+Tab into a deathmatch.

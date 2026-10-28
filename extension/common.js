@@ -1,7 +1,7 @@
 /* Shared pure logic. No network access, browser UI control, or account data. */
 (() => {
   "use strict";
-  const VERSION = "1.2.2";
+  const VERSION = "1.2.3";
   const MAPS = Object.freeze([
     { id: "mirage", label: "Mirage" },
     { id: "nuke", label: "Nuke" },

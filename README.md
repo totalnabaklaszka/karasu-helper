@@ -1,10 +1,14 @@
 <p><img src="extension/branding/mark-512.png" width="80" alt="Karasu Helper logo"></p>
 
-# Karasu Helper 1.2.2
+# Karasu Helper 1.2.3
 
 Auto accept, veto priorities, FACEIT ranks and a colour-matched loadout builder for Karasu. Unofficial community extension by **totalnabaklaszka**.
 
-**[Download Karasu Helper 1.2.2](downloads/karasu-helper-1.2.2.zip?raw=true)** · [Privacy](PRIVACY.md)
+**[Download Karasu Helper 1.2.3](downloads/karasu-helper-1.2.3.zip?raw=true)** · [Buy me a coffee on Ko-fi](https://ko-fi.com/totalnabaklaszka) · [Privacy](PRIVACY.md)
+
+## Support
+
+Karasu Helper is free. If it saves you time, you can [buy me a coffee on Ko-fi](https://ko-fi.com/totalnabaklaszka). Tips are optional and do not unlock or restrict any features. Thank you for supporting the project.
 
 ## Install
 

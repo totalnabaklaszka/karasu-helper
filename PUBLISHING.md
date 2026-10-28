@@ -1,4 +1,4 @@
-# GitHub publication kit — Karasu Helper 1.2.2
+# GitHub publication kit — Karasu Helper 1.2.3
 
 The release has been prepared locally for review. No repository or release has been published by the build scripts.
 
@@ -14,11 +14,11 @@ Make the repository public. Use the source archive or its allowlisted folders/fi
 
 ## Release
 
-Tag: `v1.2.2`
+Tag: `v1.2.3`
 
-Title: `Karasu Helper 1.2.2 — Loadout Studio`
+Title: `Karasu Helper 1.2.3 — Loadout Studio`
 
-Attach `karasu-helper-1.2.2.zip` as the installable download. This archive contains `manifest.json` at its root; users should extract it before loading it in the browser. Keep the source archive separate from the installable archive.
+Attach `karasu-helper-1.2.3.zip` as the installable download. This archive contains `manifest.json` at its root; users should extract it before loading it in the browser. Keep the source archive separate from the installable archive.
 
 The same installer and a SHA-256 checksum are included in `downloads/`. The README links directly to this installer, so a public repository is enough to share the extension before a separate GitHub Release is created.
 

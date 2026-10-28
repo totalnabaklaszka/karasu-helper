@@ -1,6 +1,6 @@
 # Karasu Helper — Privacy
 
-Last updated: 28 October 2026. Applies to version 1.2.2.
+Last updated: 28 October 2026. Applies to version 1.2.3.
 
 Karasu Helper is an unofficial community extension. It has no analytics, advertising SDK, license server or developer-operated data collection endpoint.
 
@@ -23,6 +23,10 @@ A dated public Skinport price snapshot is bundled locally. The first time the us
 **Auto-copy connect** is off by default. When enabled, a ready server command is validated and written to the clipboard; the extension does not read what was there before. It requests `clipboardWrite` and uses an `offscreen` document for this operation.
 
 When automation is enabled, Queue/match tabs are temporarily marked ineligible for automatic memory discard. The extension restores the recorded preference when automation is switched off or the page unloads. It does not control the game, press keys or move the mouse.
+
+## Optional donations
+
+The footer's **Buy me a coffee** link opens `https://ko-fi.com/totalnabaklaszka` only when clicked. The extension does not load Ko-fi scripts, payment widgets or tracking pixels. Voluntary payments take place on Ko-fi; the extension does not collect payment details, process payments, or receive a user's donation status. Ko-fi's own policies apply to its website. All extension features remain available without a donation.
 
 ## Removal
 

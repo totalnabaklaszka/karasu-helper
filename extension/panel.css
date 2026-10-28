@@ -93,9 +93,13 @@ a:hover { text-decoration: underline; }
 .ka-fallback { color: var(--subtle); font-size: 10px; margin: 14px 0 16px; line-height: 1.6; }
 .ka-fallback p { margin: 7px 0; }
 .ka-veto-delay { margin-top: 18px; }
-.ka-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 12px 18px; flex-shrink: 0; }
+.ka-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px 8px; border-top: 1px solid var(--line); padding: 12px 18px; flex-shrink: 0; }
 .ka-credit { color: var(--subtle); font-size: 10px; }
 .ka-credit strong { color: var(--text); font-size: 10px; font-weight: 500; }
+.ka-support { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 10px; line-height: 1.5; white-space: nowrap; }
+.ka-support svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.ka-support:hover { color: var(--link); text-decoration: none; }
+.ka-support:hover span { text-decoration: underline; }
 .ka-save { color: var(--error); font-size: 11px; margin: 12px 0 0; }
 .ka-stop, .ka-text-button { padding: 0; border: 0; background: none; color: var(--muted); font-size: 11px; }
 .ka-stop:hover, .ka-text-button:hover { color: var(--link); }

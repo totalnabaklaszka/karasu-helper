@@ -1,6 +1,6 @@
 {
   "name": "karasu-helper",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "description": "Minimal auto accept, veto priorities, and skins for karasu.live",
   "scripts": {

@@ -49,7 +49,7 @@
           <p class="ka-save" role="status" hidden></p>
         </div>
         <div class="ka-selection-dock" hidden></div>
-        <footer class="ka-footer"><span class="ka-credit">made by : <strong>totalnabaklaszka</strong></span><button class="ka-stop" type="button">Disable all</button></footer>
+        <footer class="ka-footer"><span class="ka-credit">made by : <strong>totalnabaklaszka</strong></span><a class="ka-support" href="https://ko-fi.com/totalnabaklaszka" target="_blank" rel="noopener noreferrer" title="Support totalnabaklaszka on Ko-fi" aria-label="Buy me a coffee on Ko-fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h12v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Zm12 1h2a3 3 0 0 1 0 6h-2M7 3v2m4-2v2m4-2v2"/></svg><span>Buy me a coffee</span></a><button class="ka-stop" type="button">Disable all</button></footer>
       </section>`;
     const panel = root.querySelector(".ka-panel");
     const q = selector => panel.querySelector(selector);
