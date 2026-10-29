@@ -1,6 +1,6 @@
 # Karasu Helper — Privacy
 
-Last updated: 28 October 2026. Applies to version 1.2.3.
+Last updated: 29 October 2026. Applies to version 1.2.4.
 
 Karasu Helper is an unofficial community extension. It has no analytics, advertising SDK, license server or developer-operated data collection endpoint.
 
@@ -11,6 +11,8 @@ The browser stores automation preferences, appearance, FACEIT display preference
 ## Karasu
 
 The extension runs on `https://karasu.live/*`. It reads the page's already loaded match/player state and uses Karasu's existing actions for enabled accept/ban features. Skin catalog reads and explicitly selected cosmetic crafting/equipping use `https://inventory.karasu.live/api` and the site's normal session credentials. These requests go to Karasu; no separate developer server receives them. Karasu's own policies apply to its service.
+
+This functionality locally processes Karasu match identifiers, player display names and Steam IDs, rank fields, the server connection address, catalog records and the signed-in user's cosmetic loadout. Matching Steam IDs keeps rank badges attached to the correct player. Normal authenticated requests are sent directly to Karasu using the browser's existing site session; the extension does not copy credentials to a developer server or ask for passwords or authentication codes. Short activity records and server commands remain in the current browser session. There is no general browsing-history, chat-message or keystroke collection.
 
 FACEIT ranks come from fields already supplied by Karasu. The extension makes no FACEIT synchronization request and asks for no FACEIT API key.
 

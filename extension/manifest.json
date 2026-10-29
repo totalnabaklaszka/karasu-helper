@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Karasu Helper",
-  "version": "1.2.3",
-  "description": "Auto accept and veto priorities for Karasu. FACEIT ranks, connect copy, and Loadout Studio with colours, value filters and saved sets.",
+  "version": "1.2.4",
+  "description": "Auto accept, map/server bans, FACEIT ranks and Loadout Studio for Karasu. Unofficial community helper.",
+  "homepage_url": "https://github.com/totalnabaklaszka/karasu-helper",
   "minimum_chrome_version": "111",
   "permissions": ["storage", "offscreen", "clipboardWrite"],
   "optional_host_permissions": ["https://api.skinport.com/*"],

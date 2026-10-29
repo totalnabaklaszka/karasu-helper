@@ -1,0 +1,26 @@
+{
+  "name": "Karasu Helper",
+  "locale": "en-US",
+  "category": "Productivity",
+  "visibility": "Public",
+  "markets": "All markets",
+  "price": "Free",
+  "websiteUrl": "https://github.com/totalnabaklaszka/karasu-helper",
+  "supportUrl": "https://github.com/totalnabaklaszka/karasu-helper/issues",
+  "privacyPolicyUrl": "https://github.com/totalnabaklaszka/karasu-helper/blob/main/PRIVACY.md",
+  "searchTerms": ["Karasu", "auto accept", "map bans", "server bans", "FACEIT ELO", "CS2 skins", "loadout builder"],
+  "descriptionFile": "description.en-US.txt",
+  "reviewerNotesFile": "reviewer-notes.txt",
+  "logo": "assets/logo-300.png",
+  "smallPromotionalTile": "assets/promo-440x280.png",
+  "largePromotionalTile": "assets/promo-1400x560.png",
+  "remoteCode": false,
+  "singlePurpose": "Help players manage their Karasu website experience: opt-in match acceptance and captain veto priorities, player rank display, server connection copying, and Karasu cosmetic loadouts.",
+  "permissionJustifications": {
+    "storage": "Save automation and appearance preferences, favorites, up to 12 named loadouts and a cached public price snapshot locally. Browser-session storage coordinates duplicate prevention, action history and temporary tab-discard preferences. No browser sync or developer server is used.",
+    "offscreen": "Create the bundled clipboard.html helper only when the user-enabled Auto-copy connect feature needs to write a validated ready-match server command. It is closed after the operation; no visible page is opened.",
+    "clipboardWrite": "Write connect IP:port for the user's participating Karasu match after they enable Auto-copy connect. The extension never reads the previous clipboard contents and does not launch or control the game.",
+    "https://karasu.live/*": "Run the bundled page adapters on Karasu pages to detect match-ready and captain-turn state, call the site's existing actions only when enabled, display rank fields beside the correct player and relay user-selected catalog/cosmetic operations. This content-script scope does not grant access to other websites.",
+    "https://api.skinport.com/*": "Optional access requested only when Update prices is clicked. Read public CS2 item prices in USD without cookies, API keys or Karasu/player identifiers. Bundled prices remain usable when access is refused. No automatic provider polling."
+  }
+}

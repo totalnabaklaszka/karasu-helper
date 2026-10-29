@@ -1,6 +1,6 @@
 {
   "name": "karasu-helper",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "private": true,
   "description": "Minimal auto accept, veto priorities, and skins for karasu.live",
   "scripts": {
@@ -9,7 +9,9 @@
     "build": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1",
     "icons": "node scripts/icons.cjs",
     "prices": "node scripts/prices.cjs",
-    "source": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/source-package.ps1"
+    "source": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/source-package.ps1",
+    "edge": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/edge-package.ps1",
+    "check:edge": "node scripts/edge-check.cjs"
   },
   "devDependencies": {
     "linkedom": "0.18.14"

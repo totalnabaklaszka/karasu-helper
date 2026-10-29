@@ -1,0 +1,33 @@
+"use strict";
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const manifest = JSON.parse(fs.readFileSync("extension/manifest.json", "utf8"));
+const listing = JSON.parse(fs.readFileSync("store/edge/listing.json", "utf8"));
+assert.equal(listing.name, manifest.name);
+assert.equal(listing.locale, "en-US");
+assert.ok(manifest.description.length > 0 && manifest.description.length <= 132);
+assert.equal(manifest.update_url, undefined, "Store should assign its own update service");
+assert.equal(manifest.key, undefined, "Do not reuse an unpacked extension signing identity");
+assert.deepEqual(manifest.permissions, ["storage", "offscreen", "clipboardWrite"]);
+assert.deepEqual(manifest.optional_host_permissions, ["https://api.skinport.com/*"]);
+assert.equal(manifest.host_permissions, undefined);
+assert.equal(manifest.background.service_worker, "background.js");
+assert.ok(manifest.content_scripts.every(script => script.matches.length === 1 && script.matches[0] === "https://karasu.live/*"));
+assert.equal(listing.remoteCode, false);
+assert.equal(listing.websiteUrl, manifest.homepage_url);
+const description = fs.readFileSync(path.join("store/edge", listing.descriptionFile), "utf8");
+assert.ok(description.length >= 250 && description.length <= 10000, "Store description length");
+assert.ok(listing.searchTerms.length <= 7);
+assert.ok(listing.searchTerms.every(term => term.length <= 30));
+assert.ok(listing.searchTerms.join(" ").trim().split(/\s+/).length <= 21);
+for (const key of [...manifest.permissions, ...manifest.optional_host_permissions, "https://karasu.live/*"]) assert.ok(listing.permissionJustifications[key]?.length > 30, `Missing justification: ${key}`);
+for (const [file, width, height] of [[listing.logo, 300, 300], [listing.smallPromotionalTile, 440, 280], [listing.largePromotionalTile, 1400, 560]]) {
+  const bytes = fs.readFileSync(path.join("store/edge", file));
+  assert.ok(bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10])));
+  assert.equal(bytes.readUInt32BE(16), width);
+  assert.equal(bytes.readUInt32BE(20), height);
+}
+assert.ok(fs.readFileSync("store/edge/reviewer-notes.txt", "utf8").includes(manifest.version), "Reviewer notes version");
+assert.ok(fs.readFileSync("store/edge/README.md", "utf8").includes(`karasu-helper-${manifest.version}.zip`), "Kit package version");
+console.log(`Edge store preflight OK: ${manifest.name} ${manifest.version}; ${manifest.description.length}/132 short-description characters; ${description.length}/10000 description characters; 3 correctly sized PNGs; scoped permissions. Manual Edge/account verification remains required.`);

@@ -1,0 +1,28 @@
+Karasu Helper 1.2.4 — first Microsoft Edge submission preparation
+
+Purpose: a free, unofficial companion for the Karasu website. All extension code, fonts and a dated public price snapshot are bundled. No remote JavaScript, native program, license check, purchase flow, advertising or analytics is included.
+
+GETTING STARTED
+1. Open https://karasu.live/ and use your own Karasu account if signed-in features are needed. Karasu is a third-party service; this extension does not create accounts, bypass sign-in or remove any verification requirements. The publisher has not provided a shared test account.
+2. Open the extension popup or its full Settings page. Queue, Maps, Servers and Skins are the main tabs. Theme controls, preference persistence and priority editing can be checked without joining a match.
+3. A fresh install leaves automatic accept, map bans, server bans and Auto-copy connect disabled. FACEIT badges are enabled by default but only show when Karasu supplies the relevant data.
+
+FUNCTION-SPECIFIC TESTING
+- Queue: enable Auto accept and choose a 1–10 second delay. A normal Karasu match-ready dialog is required for an actual accept. Queue entry is manual. Keep the site and browser open.
+- Veto: edit map/server priorities. Actual bans require the current user to be the captain with an available ban turn. The adapter respects manual selections and deadlines. Map picks and side choices stay manual.
+- Ranks: view a Karasu match overview scoreboard. FACEIT fields are read from Karasu's existing player state, matched by Steam ID. Match-start-only data is identified in the tooltip. There is no FACEIT API request or API-key requirement.
+- Clipboard: enable Auto-copy connect. The user's own participating ready/live match and a valid available server are required. Only connect IPv4:port is written; the old clipboard is not read. Changed server addresses can be copied again, while unchanged ones are deduplicated. The helper never opens the game.
+- Catalog: keep a Karasu tab open and use Skins. Public catalog browsing is available when Karasu exposes its catalog; signed-in inventory and active-preset reads are used for crafting/equipping. Search/red colour chips, weapon filters, phase names, minimum value and rarity can be inspected without crafting.
+- Studio: random generation, locks, rerolls, favorites and named-set saving are local previews. No cosmetic mutation occurs until an explicit Craft for CT/T/Both, Equip or Craft & equip loadout action.
+- Craft: only Karasu cosmetic API routes are used: POST /inventory/craft and POST /loadout at https://inventory.karasu.live/api. Metadata and team compatibility are validated, and the result is read back. No Steam trade, item deletion or purchase is performed. Sequential batches stop on failure or after the current item when Stop is requested. Keep the full Settings page open for longer batches.
+- Prices: the bundled snapshot works offline. Update prices requests optional api.skinport.com access and a public read with credentials omitted. Permission denial or network failures preserve the existing data. There is no background polling.
+
+DATA AND NETWORK
+The adapters run only on karasu.live. Karasu receives its normal session-authenticated actions and cosmetic operations. The developer operates no data endpoint. Locally processed match/player identifiers, rank fields, catalog/loadout records and server commands are described in PRIVACY.md and privacy-fields.md. Ko-fi and source/support links are opened only when clicked; no payment widget is embedded.
+
+VALIDATION LIMIT
+Automated validation uses in-memory DOM, messaging, storage and network fixtures. It does not use browser UI automation or a logged-in live match. Microsoft Edge's supported API list includes the storage/runtime/tabs/offscreen APIs used here. Actual acceptance, veto, clipboard writing and crafting still require manual verification in the real browser/account. No certification approval is claimed by this kit.
+
+There is no separate extension account, paywall, trial or region restriction in the extension. Availability of the third-party Karasu service is outside the publisher's control.
+
+Source and support: https://github.com/totalnabaklaszka/karasu-helper

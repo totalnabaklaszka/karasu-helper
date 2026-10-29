@@ -1,6 +1,12 @@
-# GitHub publication kit — Karasu Helper 1.2.3
+# Publication kit — Karasu Helper 1.2.4
 
-The release has been prepared locally for review. No repository or release has been published by the build scripts.
+The public project is [totalnabaklaszka/karasu-helper](https://github.com/totalnabaklaszka/karasu-helper). Installers are tracked in `downloads/`; no GitHub Release entry is assumed. Build scripts prepare local files and do not publish anything.
+
+## Microsoft Edge Add-ons
+
+Start with the [complete Edge submission instructions](store/edge/README.md). Run `npm run edge` to build the installer, 300px logo, optional promotional artwork and a separate submission-kit ZIP. The kit includes English listing text, privacy/permission explanations and reviewer notes. Upload its **inner extension ZIP** as the Partner Center package; the outer kit contains supporting materials.
+
+The Edge submission is not created or approved by this build. Publisher registration, truthful account/contact declarations, manual verification in Edge and final submission remain separate actions. No browser UI or logged-in website is controlled by the build.
 
 ## Repository
 
@@ -14,16 +20,18 @@ Make the repository public. Use the source archive or its allowlisted folders/fi
 
 ## Release
 
-Tag: `v1.2.3`
+Suggested future tag: `v1.2.4`
 
-Title: `Karasu Helper 1.2.3 — Loadout Studio`
+Suggested future release title: `Karasu Helper 1.2.4 — Edge store preparation`
 
-Attach `karasu-helper-1.2.3.zip` as the installable download. This archive contains `manifest.json` at its root; users should extract it before loading it in the browser. Keep the source archive separate from the installable archive.
+Use `karasu-helper-1.2.4.zip` as the installable download. This archive contains `manifest.json` at its root; users should extract it before loading it in the browser. Keep the source and store-submission archives separate from the installable archive.
 
 The same installer and a SHA-256 checksum are included in `downloads/`. The README links directly to this installer, so a public repository is enough to share the extension before a separate GitHub Release is created.
 
 Suggested release notes:
 
+- Shorten the manifest description to the Chromium 132-character limit and link the project homepage.
+- Prepare Microsoft Edge store text, privacy/permission explanations, reviewer notes and native promotional artwork; no store approval is claimed.
 - New angular red raven/K logo and a wider, minimal popup.
 - Loadout Studio: colour presets, minimum indicative market value, rarity filters, favorites and value sorting.
 - Lock slots, reroll a single skin or all unlocked slots, and save up to 12 named sets locally.
@@ -35,7 +43,7 @@ Suggested release notes:
 
 ## Installation text
 
-1. Download the extension ZIP under Releases → Assets.
+1. Download the extension ZIP linked at the top of the README.
 2. Extract it to a permanent folder.
 3. Open `chrome://extensions`, `edge://extensions` or `brave://extensions`.
 4. Enable Developer mode and choose **Load unpacked**.

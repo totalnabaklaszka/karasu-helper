@@ -1,10 +1,18 @@
 <p><img src="extension/branding/mark-512.png" width="80" alt="Karasu Helper logo"></p>
 
-# Karasu Helper 1.2.3
+# Karasu Helper 1.2.4
 
 Auto accept, veto priorities, FACEIT ranks and a colour-matched loadout builder for Karasu. Unofficial community extension by **totalnabaklaszka**.
 
-**[Download Karasu Helper 1.2.3](downloads/karasu-helper-1.2.3.zip?raw=true)** · [Buy me a coffee on Ko-fi](https://ko-fi.com/totalnabaklaszka) · [Privacy](PRIVACY.md)
+**[Download Karasu Helper 1.2.4](downloads/karasu-helper-1.2.4.zip?raw=true)** · [Buy me a coffee on Ko-fi](https://ko-fi.com/totalnabaklaszka) · [Privacy](PRIVACY.md)
+
+## Microsoft Edge Add-ons preparation
+
+The [Edge submission kit](store/edge/README.md) contains the store description, permission explanations, reviewer notes and logo. Download the [complete submission kit](downloads/karasu-helper-edge-submission-1.2.4.zip?raw=true) to prepare a Partner Center draft. Upload the **inner extension ZIP** as the package, and upload artwork separately.
+
+This is preparation for a store submission. Karasu Helper has not been submitted to or approved by Microsoft, and there is no Edge store installation link yet. Manual installation below remains available.
+
+Version 1.2.4 shortens the manifest description to the Chromium limit, adds the project homepage and supplies Edge store materials. Match and skin behavior is unchanged.
 
 ## Support
 

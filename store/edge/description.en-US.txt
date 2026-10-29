@@ -1,0 +1,32 @@
+Keep your Karasu queue settings, player ranks and cosmetic loadouts in one compact panel.
+
+Karasu Helper is a free, unofficial community extension for karasu.live, made by totalnabaklaszka. It adds controls for the Karasu website and does not control Counter-Strike 2.
+
+QUEUE AND VETO
+Enable auto accept with your preferred 1–10 second delay. Set map and server ban priorities separately; the extension follows your order when it is your captain turn. You join the queue yourself. Automatic match actions are off on a fresh installation.
+
+PLAYER RANKS
+Show FACEIT level and ELO beside Karasu ELO in supported match tables. Choose Badge, Label or Minimal. Rank data comes from fields supplied by Karasu; it is not a direct live sync with FACEIT. Missing data stays clearly marked.
+
+SERVER CONNECTION
+Optionally copy a validated connect IP:port command when your own match server is ready. A changed server address can be copied again. This feature writes to the clipboard without reading its previous contents and is off by default.
+
+SKINS AND LOADOUT STUDIO
+Search the Karasu cosmetic catalog by weapon, finish or approximate colour. Doppler and Gamma Doppler variants retain their phase or gem name. Use indicative USD market-value and rarity filters, save favorites, or preview a random weapon or loadout.
+
+Lock slots, reroll selected choices and save up to 12 named sets locally. Craft and equip for CT, T or both compatible teams after selecting an explicit action. A slot without a matching skin stays unchanged. Loadout batches run sequentially and stop on failure. These are Karasu cosmetics, not Steam items; the extension does not purchase, transfer or trade skins. Indicative market values are search filters, not crafting fees.
+
+A COMPACT PANEL
+Switch between light and dark themes. Your selected skin and equip actions stay below the scrolling catalog. Use the expanded Settings page for longer loadout batches.
+
+PRIVACY AND PERMISSIONS
+Preferences and saved sets stay on your device. There are no ads, analytics or developer-operated data collection servers. Match/player information is processed to provide the website features; cosmetic requests use your existing Karasu session and go directly to Karasu. The full privacy policy explains these flows.
+
+Price data is bundled. Clicking Update prices can request optional access to Skinport's public API; it sends no Karasu account data. Donations through the optional Ko-fi link are voluntary and unlock no features.
+
+Keep Karasu, the browser and your computer awake for match automation. Background assistance improves detection while the page is in the background; frozen tabs, sleep or connection loss can still interrupt it. Keep the expanded Settings page open while applying a longer loadout batch.
+
+Not affiliated with or endorsed by Karasu, FACEIT, Valve, Microsoft or Skinport. Karasu website changes may require extension updates.
+
+Source, installation help and issues:
+https://github.com/totalnabaklaszka/karasu-helper

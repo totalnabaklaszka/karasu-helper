@@ -6,6 +6,7 @@ const assert = require("node:assert/strict");
 const base = path.resolve("extension");
 const manifest = JSON.parse(fs.readFileSync(path.join(base, "manifest.json"), "utf8"));
 assert.equal(manifest.manifest_version, 3);
+assert.ok(typeof manifest.description === "string" && manifest.description.length <= 132, "Manifest description exceeds 132 characters");
 const shared = {};
 vm.runInNewContext(fs.readFileSync(path.join(base, "common.js"), "utf8"), shared);
 assert.equal(shared.KarasuAuto.VERSION, manifest.version, "Popup and manifest versions differ");
